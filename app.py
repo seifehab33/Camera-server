@@ -12,7 +12,7 @@ CORS(app)  # Enable CORS for all domains
 
 cameras = {}
 exit_signals = {}
-
+ALLOWED_HOSTS = '*'
 
 def start_cameras():
     """Initialize cameras and allocate resources."""
