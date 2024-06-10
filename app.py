@@ -62,6 +62,9 @@ def get_cameras():
     """API endpoint to list all active cameras."""
     return jsonify(list(cameras.keys()))
 
+@app.route('/')
+def index():
+    return "Hello, World!"
 
 if __name__ == "__main__":
     try:
